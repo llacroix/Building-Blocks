@@ -25,11 +25,6 @@
   z-index: 0;
 }
 
-/* RTL support in gaia right now keeps buttons in same direction as LTR */
-html[dir="rtl"] .bb-tablist {
-  flex-direction: row-reverse;
-}
-
 .bb-tablist > li {
   -moz-box-sizing: content-box;
   margin: 0;
@@ -228,7 +223,7 @@ html[dir="rtl"] .bb-tablist {
 }
 
 .bb-tablist[data-type="filter"] > li:first-child {
-  border-left: none;
+  border-inline-start: none;
 }
 
 .bb-tablist[data-type="filter"] > li > a,
@@ -285,4 +280,3 @@ html[dir="rtl"] .bb-tablist {
 .bb-tablist[data-type="filter"] > li > a:active {
   background-color: transparent;
 }
-
